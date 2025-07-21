@@ -1,0 +1,25 @@
+# stacks
+class stack:
+    def __init__(self):
+        self.stack = []
+    def push (self , element):
+        self.stack.append(element)
+    def pop (self):
+        if self.isEmpty():
+            print("Stack is Empty")
+        else:
+            print("Pop element is", self.stack.pop())
+    def peek (self):
+        if self.isEmpty():
+            print("Stack is Empty")
+        else:
+            print("Peek element is", self.stack[-1])
+
+myStack = stack()
+
+myStack.push('A')
+myStack.push('B')
+myStack.push('C')
+print("Stack is ", myStack.stack)
+myStack.pop()
+myStack.peek()
